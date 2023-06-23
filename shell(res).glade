@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="imageGedit">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icones/texto/Windows/Square44x44Logo.targetsize-80.png</property>
+  </object>
+  <object class="GtkImage" id="imageNavegador">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="halign">center</property>
+    <property name="valign">center</property>
+    <property name="pixbuf">icones/novosicones/32ab8324-a850-435c-851f-e075c68323ca/60x60.png</property>
+  </object>
+  <object class="GtkImage" id="imagePasta">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icones/pasta/Windows/Square44x44Logo.targetsize-80.png</property>
+  </object>
+  <object class="GtkImage" id="imageSudoku">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icones/novosicones/executavelnovo/80x80.png</property>
+  </object>
+  <object class="GtkImage" id="imageTerminal">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="halign">center</property>
+    <property name="valign">center</property>
+    <property name="pixbuf">icones/terminal/Windows/Square44x44Logo.targetsize-80.png</property>
+  </object>
+  <object class="GtkWindow" id="janelaprincipal">
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">440</property>
+    <property name="default_height">250</property>
+    <property name="type_hint">desktop</property>
+    <property name="deletable">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkFixed" id="janelainferior">
+            <property name="width_request">1920</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <child>
+              <object class="GtkMenuBar" id="barrainferior">
+                <property name="name">******************************</property>
+                <property name="width_request">1920</property>
+                <property name="height_request">53</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkMenuItem" id="iniciar">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">       Iniciar      </property>
+                    <property name="use_underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkImageMenuItem" id="sobre">
+                            <property name="label">gtk-about</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="deselect" handler="on_sobre_deselect" swapped="no"/>
+                            <signal name="select" handler="on_sobre_select" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkImageMenuItem" id="preferencias">
+                            <property name="label">gtk-preferences</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_preferencias_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkImageMenuItem" id="reboot">
+                            <property name="label">gtk-refresh</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_reboot" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkSeparatorMenuItem">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkImageMenuItem" id="sair">
+                            <property name="label">gtk-quit</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_quit" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="sudokumenu">
+                    <property name="can_focus">False</property>
+                    <property name="margin_left">5</property>
+                    <property name="margin_right">5</property>
+                    <property name="label" translatable="yes">Sudoku</property>
+                    <property name="use_underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkImageMenuItem" id="fecharsudoku">
+                            <property name="label">gtk-close</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_fecharsudoku_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="geditmenu">
+                    <property name="can_focus">False</property>
+                    <property name="margin_left">5</property>
+                    <property name="margin_right">5</property>
+                    <property name="label" translatable="yes">Gedit</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkImageMenuItem" id="fechargedit">
+                            <property name="label">gtk-close</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_fechargedit_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="pastamenu">
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Pasta pessoal</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkImageMenuItem" id="fecharpasta">
+                            <property name="label">gtk-close</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_fecharpasta_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="flybirdmenu">
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">FlyBird</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkImageMenuItem" id="fecharflybird">
+                            <property name="label">gtk-close</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_fecharflybird_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="terminalmenu">
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Terminal</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkImageMenuItem" id="fecharterminal">
+                            <property name="label">gtk-close</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="use_underline">True</property>
+                            <property name="use_stock">True</property>
+                            <property name="always_show_image">True</property>
+                            <signal name="activate" handler="on_fecharterminal_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="timer">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="x">1710</property>
+                <property name="y">15</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="labelon">
+                <property name="width_request">89</property>
+                <property name="height_request">30</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">testando isso daqui</property>
+              </object>
+              <packing>
+                <property name="x">132</property>
+                <property name="y">12</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="sudokuicone">
+                <property name="width_request">40</property>
+                <property name="height_request">40</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">icones/novosicones/executavelnovo/40x40.png</property>
+                <property name="pixel_size">54</property>
+              </object>
+              <packing>
+                <property name="x">1004</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="gediticone">
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="pixbuf">icones/texto/Windows/Square44x44Logo.targetsize-36.png</property>
+              </object>
+              <packing>
+                <property name="x">971</property>
+                <property name="y">9</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="flybirdicone">
+                <property name="can_focus">False</property>
+                <property name="pixbuf">icones/novosicones/32ab8324-a850-435c-851f-e075c68323ca/29x29.png</property>
+              </object>
+              <packing>
+                <property name="x">937</property>
+                <property name="y">13</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="pastaicone">
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="pixbuf">icones/pasta/Windows/Square44x44Logo.targetsize-40.png</property>
+              </object>
+              <packing>
+                <property name="x">892</property>
+                <property name="y">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="terminalicone">
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="pixbuf">icones/terminal/Windows/Square44x44Logo.targetsize-40.png</property>
+              </object>
+              <packing>
+                <property name="x">851</property>
+                <property name="y">9</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="y">1027</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="event1">
+            <property name="width_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <signal name="motion-notify-event" handler="on_event1_motion_notify_event" swapped="no"/>
+            <child>
+              <object class="GtkButton" id="botaoexecutavel">
+                <property name="label" translatable="yes">Sudoku</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="image">imageSudoku</property>
+                <property name="relief">none</property>
+                <property name="image_position">top</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_botaoexecutavel_clicked" swapped="no"/>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="y">411</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="event2">
+            <property name="width_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <signal name="motion-notify-event" handler="on_event1_motion_notify_event" swapped="no"/>
+            <child>
+              <object class="GtkButton" id="button2">
+                <property name="label" translatable="yes">Gedit</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="image">imageGedit</property>
+                <property name="relief">none</property>
+                <property name="image_position">top</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_botaotexto_clicked" swapped="no"/>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="y">310</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="event3">
+            <property name="width_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <signal name="motion-notify-event" handler="on_event1_motion_notify_event" swapped="no"/>
+            <child>
+              <object class="GtkButton" id="botaoapp1">
+                <property name="label" translatable="yes">Fly Bird</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="image">imageNavegador</property>
+                <property name="relief">none</property>
+                <property name="image_position">top</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_botaoapp1_clicked" swapped="no"/>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="logo">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="opacity">0.69999999999999996</property>
+            <property name="pixbuf">icones/novosicones/windoorspequeno.png</property>
+          </object>
+          <packing>
+            <property name="x">1227</property>
+            <property name="y">719</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="event4Arquivos">
+            <property name="width_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <signal name="motion-notify-event" handler="on_event1_motion_notify_event" swapped="no"/>
+            <child>
+              <object class="GtkButton" id="botaopasta">
+                <property name="label" translatable="yes">Pessoal</property>
+                <property name="name">Arquivos</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="image">imagePasta</property>
+                <property name="relief">none</property>
+                <property name="image_position">top</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_botaopasta_clicked" swapped="no"/>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="event5Terminal">
+            <property name="width_request">150</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <signal name="motion-notify-event" handler="on_event1_motion_notify_event" swapped="no"/>
+            <child>
+              <object class="GtkButton" id="botaoterminal">
+                <property name="label" translatable="yes">Terminal</property>
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <property name="image">imageTerminal</property>
+                <property name="relief">none</property>
+                <property name="image_position">top</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_botaoterminal_clicked" swapped="no"/>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="infosobre">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">icones/sobre/Windoors_XD.png</property>
+          </object>
+          <packing>
+            <property name="x">117</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="logo2">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="can_focus">False</property>
+            <property name="opacity">0.70000000022351738</property>
+            <property name="pixbuf">icones/novosicones/orange1pequeno.png</property>
+          </object>
+          <packing>
+            <property name="x">1428</property>
+            <property name="y">730</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="logo3">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="can_focus">False</property>
+            <property name="opacity">0.69999999999999996</property>
+            <property name="pixbuf">icones/novosicones/rivalindowspequeno.png</property>
+          </object>
+          <packing>
+            <property name="x">1222</property>
+            <property name="y">720</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="logo4">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="can_focus">False</property>
+            <property name="opacity">0.37</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="pixbuf">icones/novosicones/Imagem2.png</property>
+          </object>
+          <packing>
+            <property name="x">627</property>
+            <property name="y">478</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
